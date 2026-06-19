@@ -1,0 +1,53 @@
+## --- Xcode User Data & Layouts ---
+# Block user-specific settings that cause constant merge conflicts
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+*.xcuserdatad
+xcuserdata/
+
+## --- Build Artifacts & Caches ---
+# Block Xcode's derived data and build outputs
+build/
+DerivedData/
+*.xccheckout
+*.moved-aside
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## --- Swift Package Manager (SPM) ---
+# Ignore SPM build artifacts, but KEEP your Package.resolved if you want pinned versions
+.build/
+# Uncomment the line below if you do NOT want to check in your package dependency versions:
+# Package.resolved
+
+## --- CocoaPods & Carthage (If applicable) ---
+# If you stick purely to SPM, you can ignore these
+Pods/
+Podfile.lock
+Carthage/Build/
+
+## --- Fastlane ---
+# If you use Fastlane for automation
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+## --- OS & System Clutter ---
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon_
+._*
+.Spotlight-V100
+.Trashes
+
+## --- Security & Secrets ---
+# NEVER check in API keys, certificates, or provisioning profiles
+*.pem
+*.p12
+*.key
+.env
+.env.*
